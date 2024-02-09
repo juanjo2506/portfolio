@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "GrindingCoffe",
+        "description": "Grinding Coffee is an ecommerce, it uses JavaScript for both backend and frontend development, along with Express, Node.js, JSON, EJS, and CSS. The project is continuously updated, with a final version expected soon. The login and registration processes are operational, as well as CRUD implementation.",
+        "img": "web.jpg",
+        "link": ""
+    },
+    {
+        "id": 2,
+        "name": "MercadoLiebre",
+        "description": "This project serves as a practice exercise, modeled after the Mercado Libre website, allowing me to test my skills in HTML, CSS, JavaScript (Backend), Express, and Node.js.",
+        "img": "web.jpg",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "name": "Expresify",
+        "description": "This is a future project that I'm working on with a friend, aiming to utilize all the tools we've learned. We're hopeful that it will become a reality soon. The project is being built with EJS, CSS, Express, Node.js, and JavaScript for both backend and frontend development.",
+        "img": "web.jpg",
+        "link": ""
+    }
+]
