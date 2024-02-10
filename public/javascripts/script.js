@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: "right" });
 
 
 const typed = new Typed(".multiple-text", {
-    strings: ["a FullStack Developer", "an Industrial engineer"],
+    strings: ["a FullStack Developer", "an Industrial Engineer"],
     typeSpeed: 100,
     backSpeed:100,
     backDelay:1000,
@@ -62,4 +62,9 @@ let NoteButton = document.querySelector(".btn-portfolio")
 let Note = document.querySelector(".Note")
 NoteButton.onclick = () =>{
     Note.classList.toggle("active-note");
+  }
+let AchievementsButton = document.querySelector(".btn-about")
+let achievements = document.querySelector(".achievements")
+AchievementsButton.onclick = () =>{
+    achievements.classList.toggle("display-achievements");
   }

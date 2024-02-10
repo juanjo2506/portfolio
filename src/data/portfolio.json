@@ -4,8 +4,8 @@
         "name": "GrindingCoffe",
         "description": "Grinding Coffee is an ecommerce, it uses JavaScript as main tool, along with Express, Node.js, JSON, EJS, and CSS. The project is continuously updated, with a final version expected soon. The login and registration processes are operational, as well as CRUD implementation.",
         "img": "grinding.jpg",
-        "linkGit": "https://github.com/imjonslz/grupo_9_GrindingCoffee",
-        "link": "#"
+        "linkGit": "https://github.com/juanjo2506/GrindingCoffee",
+        "link": "https://grindingcoffee.onrender.com/"
     },
     {
         "id": 2,
@@ -21,6 +21,6 @@
         "description": "This is a future project that I'm working on with a friend, aiming to utilize all the tools we've learned. We're hopeful that it will become a reality soon. The project is being built with EJS, CSS, Express, Node.js, and JavaScript for both backend and frontend development.",
         "img": "expresify.jpeg",
         "linkGit": "https://github.com/danycomill/expresify",
-        "link": "#"
+        "link": "https://expresify.onrender.com/"
     }
 ]

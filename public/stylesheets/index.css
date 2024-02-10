@@ -1,12 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 /*   font-family: 'Poppins', Arial, Helvetica, sans-serif; */
-  font-family: 'Russo One', sans-serif;
+font-family: 'Raleway', sans-serif;
   text-decoration: none;
   border: none;
   outline: none;
@@ -81,13 +81,14 @@ section{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(180deg, #0b3954b5 0%, #0b3954d3 100%), url("/images/programming2.jpg");
+  background-color: var(--background-color);
+/*   background-image: linear-gradient(180deg, #0b3954b5 0%, #0b3954d3 100%), url("/images/programming2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 .home-img img{
-  width: 20vw;
+  width: 30vw;
  /*  animation: floatImage 4s ease-in-out infinite; */
 }
 /* @keyframes floatImage {
@@ -119,6 +120,10 @@ span{
 }
 .home-content p{
   font-size: 1.6rem;
+}
+.home-text{
+  width: 70%;
+  max-width: 700px;
 }
 .social-media a {
   display: inline-flex;
@@ -186,13 +191,43 @@ width: 35vw;
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
+.btn-about{
+  cursor: pointer;
+}
+.achievements{
+  border: 1px groove var(--main-color);
+  margin-top: 15px;
+  padding: 20px;
+  box-shadow: 0 0 1rem var(--main-color);
+  display: none;
+  font-size: 1.6rem;
+
+}
+.achievements h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+.achievements ul li{
+  margin-top: 10px;
+/*   font-size: 20px; */
+  list-style:none
+}
+li ul.projects-ul li{
+  margin-top: 10px; /* Ajusta según lo necesario */
+  margin-left: 30px; /* Ajusta según lo necesario */
+  list-style-type: circle; 
+}
+.display-achievements{
+  display: block;
+}
 /* It's where about section ends */
 
 /* Services */
 .services{
-  background-image: linear-gradient(180deg, #0b395473 0%, #0b395480 100%), url("/images/programming.jpg");
+  background-color: var(--background-color);
+/*   background-image: linear-gradient(180deg, #0b395473 0%, #0b395480 100%), url("/images/programming.jpg");
   background-attachment: fixed;
-  background-size: contain;
+  background-size: contain; */
 }
 .services h2{
   margin-bottom: 5rem;
@@ -264,7 +299,7 @@ width: 35vw;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), var(--main-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,11 +348,15 @@ width: 35vw;
 .btn-portfolio{
   margin-top: 15px;
   cursor: pointer;
+  text-align: center;
+ 
+  
 }
 .Note{
   border: 1px solid var(--main-color);
   padding: 10px;
   display: none;
+  font-size: 25px;
 
 }
 .active-note{
