@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+/*   font-family: 'Poppins', Arial, Helvetica, sans-serif; */
+  font-family: 'Russo One', sans-serif;
   text-decoration: none;
   border: none;
   outline: none;
@@ -40,6 +42,7 @@ section{
   padding: 2rem 9%;
   background: var(--background-color);
   display: flex;
+/*   flex-direction: row-reverse; */
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -75,14 +78,19 @@ section{
 /* MAIN CONTENT */
 .home{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(180deg, #0b3954b5 0%, #0b3954d3 100%), url("/images/programming2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .home-img img{
-  width: 35vw;
-  animation: floatImage 4s ease-in-out infinite;
+  width: 20vw;
+ /*  animation: floatImage 4s ease-in-out infinite; */
 }
-@keyframes floatImage {
+/* @keyframes floatImage {
   0% {
     transform: translateY(0);
   }
@@ -92,7 +100,7 @@ section{
   100% {
     transform: translateY(0);
   }
-}
+} */
 .home-content h3{
   font-size: 3.2rem;
   font-weight: 700;
@@ -153,6 +161,7 @@ box-shadow: 0 0 1rem var(--main-color);
 
 .about{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items:center;
   gap: 2rem;
@@ -180,6 +189,11 @@ width: 35vw;
 /* It's where about section ends */
 
 /* Services */
+.services{
+  background-image: linear-gradient(180deg, #0b395473 0%, #0b395480 100%), url("/images/programming.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
 .services h2{
   margin-bottom: 5rem;
 }
@@ -238,6 +252,7 @@ width: 35vw;
 }
 .portfolio-box img {
   width: 100%;
+  min-height: 280px;
   transition: .5s ease;
 }
 .portfolio-box:hover img{
@@ -285,10 +300,39 @@ width: 35vw;
   font-size: 2rem;
   color: var(--background-secondary-color);
 }
+
+.links-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.links-box a{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.btn-portfolio{
+  margin-top: 15px;
+  cursor: pointer;
+}
+.Note{
+  border: 1px solid var(--main-color);
+  padding: 10px;
+  display: none;
+
+}
+.active-note{
+  display: block;
+  
+}
 /* It's where portfolio section ends */
 
 /* contact */
-
+.contact{
+  background-image: linear-gradient(180deg, #0b3954b5 0%, #0b3954d3 100%), url("/images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .contact h2{
   margin-bottom: 3rem;
 }
@@ -382,6 +426,11 @@ width: 35vw;
   .portfolio{
     padding-bottom: 7rem;
   }
+  .portfolio-box img {
+ 
+    max-height: 250px;
+
+  }
   .contact{
     min-height: auto;
   }
@@ -423,7 +472,7 @@ width: 35vw;
     font-size: 5rem;
   }
   .home-img img {
-    width: 70vw;
+
     margin-top: 4rem;
   }
   .about{
@@ -442,6 +491,11 @@ width: 35vw;
   .portfolio-container{
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio-box img {
+ 
+    max-height: 200px;
+
+  }
 }
 
 @media(max-width:617px){
@@ -457,6 +511,13 @@ width: 35vw;
   .contact form .input-box input{
     width: 100%;
   }
+  .home-img img{
+    width: 40vw;
+   
+  }
+  .portfolio-box img {
+  max-height: 150px;
+  }
 
 }
 
@@ -471,5 +532,8 @@ width: 35vw;
   text-align: center;
   margin-top: 2rem;
  }
+ .portfolio-box img {
+  max-height: 100px;
+}
 
 }

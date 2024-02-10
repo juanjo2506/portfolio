@@ -45,7 +45,7 @@ ScrollReveal({
     delay: 200
 });
 ScrollReveal().reveal('.home-content, .heading', { origin: "top" });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: "bottom" });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .btn-portfolio', { origin: "bottom" });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: "left" });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: "right" });
 
@@ -57,3 +57,9 @@ const typed = new Typed(".multiple-text", {
     backDelay:1000,
     loop:true
 });
+
+let NoteButton = document.querySelector(".btn-portfolio")
+let Note = document.querySelector(".Note")
+NoteButton.onclick = () =>{
+    Note.classList.toggle("active-note");
+  }

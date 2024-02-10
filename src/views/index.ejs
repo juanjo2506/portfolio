@@ -12,22 +12,25 @@
           <h3>And I'm <span class="multiple-text"></span></h3>
           <p>My main goal is to become the best version of myself day by day, focusing on the features that stand out the most. The key elements for me are commitment, discipline, and consistency, and these form the core of my work philosophy. As a Full Stack Developer, I am capable of building a complete and functional website from scratch. I apply various tools, including HTML, CSS, JavaScript, Node.js, Express, and MySQL. Currently, I am expanding my skill set by learning additional tools such as APIs and React.</p>
           <div class="social-media">
-            <a href=""><i class='bx bxl-facebook-circle'></i></a>
-            <a href=""><i class='bx bxl-instagram'></i></a>
-            <a href=""><i class='bx bxl-whatsapp'></i></a>
-            <a href=""><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.facebook.com/jaason.voorhes/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/juanjo2506/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://w.app/PralLp" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.linkedin.com/in/juan-jose-tellez-292698251/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/juanjo2506" target="_blank"><i class='bx bxl-github'></i></a>
+            
           </div>
-          <a href="#" class="btn">Download CV</a>
+          <a href="https://drive.google.com/file/d/1jIbri0m_QZa-4W-r0aqHjZv4JU4qUEjm/view?usp=sharing" class="btn" target="_blank">Download CV</a>
         </div>
         <div class="home-img">
-          <img src="/images/Default.png" alt="">
+          <img src="/images/FOTOCV.jpeg" alt="">
         </div>
       </section>
+      <!-- <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C212.47,176.16 349.21,-49.99 497.46,27.14 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #174348;"></path></svg></div> -->
 
       <!-- about -->
       <section class="about" id="about">
         <div class="about-img">
-          <img src="/images/Default.png" alt="">
+          <img src="/images/about.jpeg" alt="">
         </div>
         <div class="about-content">
           <h2 class="heading">About <span>Me</span></h2>
@@ -36,31 +39,29 @@
           <a href="#" class="btn">Read More</a>
         </div>
       </section>
+  
 
       <!-- Services -->
       <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading">My <span>Skills</span></h2>
 
         <div class="services-container">
           <div class="services-box">
             <i class='bx bx-code'></i>
             <h3>Web Develoment</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iste placeat nulla repudiandae laborum!
-              Similique veritatis id ipsa itaque quia!</p>
+            <p>Thanks to all the skills and knowledge that I have acquired, I have recently become a full-stack developer. I am capable of building a website, including its functionalities, implementing CRUD operations, validations, a login and registration process, database integration, and APIs.</p>
             <a href="#" class="btn">Read More</a>
           </div>
           <div class="services-box">
             <i class='bx bxl-sketch' ></i>
             <h3>Frontend Developer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iste placeat nulla repudiandae laborum!
-              Similique veritatis id ipsa itaque quia!</p>
+            <p>I'm able to design the visual aspects of the different sections that comprise a website, structuring it through HTML, CSS, and JavaScript. Right now, I'm learning React in order to implement new features for future projects.</p>
             <a href="#" class="btn">Read More</a>
           </div>
           <div class="services-box">
             <i class='bx bx-laptop'></i>
             <h3>Backend Developer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iste placeat nulla repudiandae laborum!
-              Similique veritatis id ipsa itaque quia!</p>
+            <p>Definitely what I like the most is the backend side. It's like bringing to life the project you are working on. In this case, I'm using JavaScript as the main tool. Then, I use Express, Node.js, MySQL, and everything in between. As additional packages, I utilize Sequelize, EJS, Multer, Express-session, and cookie-parser</p>
             <a href="#" class="btn">Read More</a>
           </div>
         </div>
@@ -77,28 +78,38 @@
               <div class="portfolio-layer">
                 <h4><%= portfolio.name %></h4>
                 <p><%= portfolio.description %></p>
+                <div class="links-box">
                 <a href="#"><i class='bx bx-link' ></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>    
+              </div>
               </div>
             </div>
             <% }) %>
 
+        </div>
+        <h2 class="btn btn-portfolio">Note: Click to Expand</h2>
+        <div class="Note">
+          <p>As you can see, some of these projects have 2 links: one of them is the direct link to the website, and the other one is the GitHub repository where it's saved. Right now, some of the projects are only on GitHub, but you can download them and execute the command 'npm start' or 'npm test' in order to start the localhost and see the project for yourself. If you have any questions, feel free to contact me.</p>
         </div>
       </section>
       <!-- Contact -->
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://formsubmit.co/juanjose250699@gmail.com" method="POST">
           <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Full Name" name="name">
+            <input type="email" placeholder="Email Address" name="email">
           </div>
           <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
+            <input type="number" placeholder="Mobile Number" name="phone">
             <input type="text" placeholder="Email Subject">
           </div>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
            <input type="submit" value="Send" class="btn">
+           <!-- aqui en el value es el dominio -->
+           <input type="hidden" name="_next" value="http://localhost:3000">
+           <input type="hidden" name="_captcha" value="false">
         </form>
       </section>
       <%- include("partials/footer.ejs") %>
