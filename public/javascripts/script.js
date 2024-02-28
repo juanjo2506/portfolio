@@ -69,3 +69,8 @@ AchievementsButton.onclick = () =>{
     achievements.classList.toggle("display-achievements");
   }
   
+let form = document.getElementById("myForm")
+
+form.addEventListener("submit",function (e) {
+    alert("Your message was sent successfully")
+})
