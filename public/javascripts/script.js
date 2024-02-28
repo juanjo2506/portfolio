@@ -71,6 +71,43 @@ AchievementsButton.onclick = () =>{
   
 let form = document.getElementById("myForm")
 
-form.addEventListener("submit",function (e) {
-    alert("Your message was sent successfully")
+form.addEventListener("submit",function (event) {
+    let errors = [];
+    let nameInput = document.querySelector("input[name='name']");
+    
+    if (nameInput.value === "") {
+        errors.push("You have to write a valid name")
+    }
+    emailRegex = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i
+    let emailInput = document.querySelector("input[name='email']");
+    if (emailInput.value === "") {
+        errors.push("You have to write an email")
+    }else if (!emailRegex.test(emailInput.value)) {
+        
+        errors.push("You have to write a valid email")
+    }
+    let phoneInput = document.querySelector("input[name='phone']");
+    if (phoneInput.value === "") {
+        errors.push("You have to write a valid phone")
+        
+    }
+    let messageInput = document.querySelector("textarea[name='message']");
+    if (messageInput.value === "") {
+        errors.push("You have to write a message")
+        
+    }
+    if (errors.length > 0) {
+        event.preventDefault();
+        let errorDiv = document.querySelector("div.errors ul")
+
+        errorDiv.innerHTML = "" 
+
+        errors.forEach(error => {
+            errorDiv.innerHTML += "<li>" +error+"</li>"
+        });
+        
+    }else{
+
+        alert("Your message was sent successfully")
+    }
 })
