@@ -69,12 +69,3 @@ AchievementsButton.onclick = () =>{
     achievements.classList.toggle("display-achievements");
   }
   
-
-  document.getElementById("myForm").addEventListener("submit", function(event) {
-    // Se deja que el formulario se envíe normalmente
-    // Después de que se envíen los datos, se redirecciona al usuario
-    setTimeout(function() {
-      window.location.href = "https://juanjo-portfolio.onrender.com"; // Redirigir al usuario a la página deseada
-    }, 1000); // 1000 milisegundos = 1 segundo
-    alert("Your message was sent successfully")
-  });
