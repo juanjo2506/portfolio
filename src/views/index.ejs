@@ -19,10 +19,10 @@
             <a href="https://github.com/juanjo2506" target="_blank"><i class='bx bxl-github'></i></a>
             
           </div>
-          <a href="https://drive.google.com/file/d/1jIbri0m_QZa-4W-r0aqHjZv4JU4qUEjm/view?usp=sharing" class="btn" target="_blank">Download CV</a>
+          <a href="https://drive.google.com/file/d/1BSytzJVe02zzkI8Mw8RCMyrJyswpON1-/view?usp=sharing" class="btn" target="_blank">Download CV</a>
         </div>
         <div class="home-img">
-          <img src="/images/foto.png" alt="">
+          <img src="/images/FOTO.png" alt="">
         </div>
       </section>
       <!-- <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C212.47,176.16 349.21,-49.99 497.46,27.14 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #174348;"></path></svg></div> -->
@@ -111,20 +111,24 @@
       <!-- Contact -->
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
+        <div class="errors">
+          <ul>
 
-        <form action="https://formsubmit.co/juanjose250699@gmail.com" method="POST">
+          </ul>
+        </div>
+        <form action="https://formsubmit.co/juanjose250699@gmail.com" method="POST" id="myForm">
           <div class="input-box">
-            <input type="text" placeholder="Full Name" name="name">
-            <input type="email" placeholder="Email Address" name="email">
+            <input type="text" placeholder="Full Name" name="name" class="name">
+            <input type="email" placeholder="Email Address" name="email" class="email">
           </div>
           <div class="input-box">
-            <input type="number" placeholder="Mobile Number" name="phone">
+            <input type="number" placeholder="Mobile Number" name="phone" class="phone">
             <input type="text" placeholder="Email Subject">
           </div>
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" class="message"></textarea>
            <input type="submit" value="Send" class="btn">
            <!-- aqui en el value es el dominio -->
-           <input type="hidden" name="_next" value="http://localhost:3000">
+           <input type="hidden" name="_next" value="https://juanjo-portfolio.onrender.com/">
            <input type="hidden" name="_captcha" value="false">
         </form>
       </section>

@@ -22,5 +22,13 @@
         "img": "expresify.jpeg",
         "linkGit": "https://github.com/danycomill/expresify",
         "link": "https://expresify.onrender.com/"
+    },
+    {
+        "id": 4,
+        "name": "JappWorkout",
+        "description": "It's a project I've developed entirely using ReactJS. It's responsive for all kind of devices and designed to provide a solution for athletes who want an effective workout routine. It not only counts their sets but also measures the time between them, providing a strict track of the exercises they perform.",
+        "img": "jappworkout.PNG",
+        "linkGit": "https://github.com/juanjo2506/JappWorkout",
+        "link": "https://jappworkout.netlify.app"
     }
 ]

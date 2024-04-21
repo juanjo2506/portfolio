@@ -411,6 +411,13 @@ li ul.projects-ul li{
   margin-top: 2rem;
   cursor: pointer;
 }
+div.errors{
+  color: #b22e56;
+  
+}
+div.errors ul li{
+  font-size: 20px
+}
 /* It's where contact section ends */
 /* footer */
 .footer{
